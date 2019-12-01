@@ -1,0 +1,9 @@
+<h1 class="mb-3">TODAY'S POSTS</h1>
+
+<% @posts.each do |post| %>
+  <h2> <%= link_to post.name, post_path(post) %> </h2>
+  <p> <%= post.description %> </p>
+  <p> <%= post.duration %> </p>
+<% end %>
+
+<p> <%= link_to "Create a new post", new_post_path %> </p>

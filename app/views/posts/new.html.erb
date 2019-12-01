@@ -1,0 +1,8 @@
+<%= simple_form_for @post do |p| %>
+  <%= p.input :name %>
+  <%= p.input :description %>
+  <%= p.input :duration %>
+  <%= p.input :photo %>
+  <%= p.input :photo_cache, as: :hidden %>
+  <%= p.submit %>
+<% end %>
